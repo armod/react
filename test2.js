@@ -1,4 +1,4 @@
-{/*dfs*/}
+{/*ReactDOM przyjmuje dwa argumenty - pierwszy to komponent, który chcemy wyrenderować, drugi to element z komponentu, który ma być wyświetlony*/}
 const JSX = (
   <div id='challenge-node'>
     <h1>Hello World</h1>

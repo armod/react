@@ -1,7 +1,8 @@
 import React from 'react'
 
-const Person = ({ people }) => {
+const Person = ({ people, handleRemove }) => {
   // console.log(people)
+
   return (
     <section className='section'>
       <h2>Persons</h2>
@@ -13,7 +14,9 @@ const Person = ({ people }) => {
               <h3>{name}</h3>
               <h4>{age}</h4>
               <p>{lang}</p>
-              <button className='btn'>remove</button>
+              <button className='btn' onClick={() => handleRemove(id)}>
+                remove
+              </button>
             </li>
           </ul>
         )

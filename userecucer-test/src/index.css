@@ -5,3 +5,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: #8d8d8d;
+}
+
+.wrapper {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper h2 {
+  margin-top: 2rem;
+}
+
+ul {
+  background: #d8d8d8;
+  margin: 1rem;
+}
+li {
+  /* max-width: 80vw; */
+  /* border: 1px solid black; */
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.btn {
+  background: rgb(70, 73, 253);
+  color: #fff;
+  width: 120px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px 1px #8987ff;
+}
+
+.btn:hover {
+  background: rgb(43, 46, 255);
+}

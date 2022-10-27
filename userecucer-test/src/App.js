@@ -23,13 +23,18 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // console.log(e.target)
-    //dodaje tutaj id zeby rekord był unikalny (gdybym to dodał w handleChange to by wygenerowywało id przy każdej zmianie (wpisywaniu) w input)
-    const id = new Date().getTime().toString()
-    const newPerson = { id, ...person } // kolejność jest dowolna
-    console.log('newPerson', newPerson)
-    // dispatch({ type: 'ADD', payload: newPerson })
-    setPerson({ name: '', age: '', lang: '' })
+    console.log(person)
+    if (person.name && person.age && person.lang !== '') {
+      // console.log(e.target)
+      //dodaje tutaj id zeby rekord był unikalny (gdybym to dodał w handleChange to by wygenerowywało id przy każdej zmianie (wpisywaniu) w input)
+      const id = new Date().getTime().toString()
+      const newPerson = { id, ...person } // kolejność jest dowolna
+      console.log('newPerson', newPerson)
+      dispatch({ type: 'ADD', payload: newPerson })
+      setPerson({ name: '', age: '', lang: '' })
+    } else {
+      alert('uzupełnij wszystie poal')
+    }
   }
 
   const handleChange = (e) => {
@@ -38,7 +43,6 @@ function App() {
     const value = e.target.value
     // console.log(name, value)
     setPerson({ ...person, [name]: value })
-    // console.log(person)
   }
 
   return (

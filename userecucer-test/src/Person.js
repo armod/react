@@ -6,7 +6,7 @@ const Person = ({ people, handleRemove }) => {
   return (
     <section className='section'>
       <h2>Persons</h2>
-      {people.map((person) => {
+      {people?.map((person) => {
         const { id, name, age, lang } = person
         return (
           <ul key={id}>

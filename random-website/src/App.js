@@ -16,7 +16,7 @@ function App() {
   return (
     <Wrapper>
       <Home />
-      {console.log(JSON.stringify(data, null, 2))}
+      {/* {console.log(JSON.stringify(data, null, 2))} */}
     </Wrapper>
   )
 }

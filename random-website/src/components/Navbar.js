@@ -1,10 +1,11 @@
 import React from 'react'
+import styled from 'styled-components'
 import { useGlobalContext } from '../context'
 
 const Navbar = () => {
   const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext()
   return (
-    <nav className='nav'>
+    <Wrapper>
       <div className='nav-center'>
         <div className='nav-header'>
           <img src='' alt='' />
@@ -28,8 +29,32 @@ const Navbar = () => {
         </ul>
         <button className='btn signin-btn'>sign in</button>
       </div>
-    </nav>
+    </Wrapper>
   )
 }
 
 export default Navbar
+
+const Wrapper = styled.nav`
+  height: 5rem;
+  display: flex;
+  border: 1px solid red;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: #ff0;
+  z-index: 1;
+  .nav-center {
+    width: 60vw;
+  }
+
+  @media screen and (min-width: 800px) {
+    .nav-center {
+      display: grid;
+      align-items: center;
+    }
+    .toggle-btn {
+      display: none;
+    }
+  }
+`

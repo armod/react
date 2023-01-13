@@ -6,3 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.btn {
+  font-size: 1rem;
+  padding: 0.25rem 0.75rem;
+  border-color: transparent;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  background: rgb(164, 133, 236);
+}

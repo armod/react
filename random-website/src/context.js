@@ -7,11 +7,11 @@ export const AppProvider = ({ children }) => {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(true)
 
   const openSidebar = () => {
-    console.log(isSidebarOpen, 'ss')
+    console.log(isSidebarOpen)
     setIsSidebarOpen(true)
   }
   const closeSidebar = () => {
-    console.log(isSidebarOpen, 'ss')
+    console.log(isSidebarOpen)
     setIsSidebarOpen(false)
   }
   const openSubmenu = () => {
@@ -22,14 +22,14 @@ export const AppProvider = ({ children }) => {
   }
   return (
     <AppContext.Provider
-      value={
-        (isSidebarOpen,
+      value={{
+        isSidebarOpen,
         isSubmenuOpen,
         openSidebar,
         openSubmenu,
         closeSidebar,
-        closeSubmenu)
-      }
+        closeSubmenu,
+      }}
     >
       {children}
     </AppContext.Provider>

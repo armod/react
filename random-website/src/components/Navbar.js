@@ -51,6 +51,7 @@ const Wrapper = styled.nav`
   @media screen and (min-width: 800px) {
     .nav-center {
       display: grid;
+      grid-template-columns: auto 1fr auto;
       align-items: center;
     }
     .toggle-btn {

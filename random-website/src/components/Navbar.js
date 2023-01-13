@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className='nav-header'>
           <img src='' alt='' />
           <button className='btn toggle-btn' onClick={openSidebar}>
-            ikona
+            open sidebar
           </button>
         </div>
         <ul className='nav-links'>

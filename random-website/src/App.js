@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components/macro'
 import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar'
 import Home from './pages/Home'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
   return (
     <Wrapper>
       <Navbar />
+      <Sidebar />
       <Home />
       {/* {console.log(JSON.stringify(data, null, 2))} */}
     </Wrapper>

@@ -20,7 +20,6 @@ function App() {
       <Navbar />
       <Sidebar />
       <Home />
-      {/* {console.log(JSON.stringify(data, null, 2))} */}
     </Wrapper>
   )
 }

@@ -29,5 +29,11 @@ export default App
 const Wrapper = styled.main`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  /* justify-content: center;
+  align-content: center; */
+  /* margin: 0 auto; */
+  position: absolute;
+  left: 50%;
+  top: 2rem;
+  transform: translate(-50%, -0%);
 `

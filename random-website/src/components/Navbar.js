@@ -41,11 +41,10 @@ const Wrapper = styled.nav`
   border: 1px solid red;
   align-items: center;
   justify-content: center;
-  background: #ff0;
+  /* background: #ff0; */
   z-index: 1;
-  width: 60vw;
   .nav-center {
-    max-width: 60vw;
+    /* max-width: 60vw; */
   }
 
   @media screen and (min-width: 800px) {

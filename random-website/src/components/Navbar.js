@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { useGlobalContext } from '../context'
 
 const Navbar = () => {
@@ -39,13 +39,13 @@ const Wrapper = styled.nav`
   height: 5rem;
   display: flex;
   border: 1px solid red;
-  position: relative;
   align-items: center;
   justify-content: center;
   background: #ff0;
   z-index: 1;
+  width: 60vw;
   .nav-center {
-    width: 60vw;
+    max-width: 60vw;
   }
 
   @media screen and (min-width: 800px) {

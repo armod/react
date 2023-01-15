@@ -26,7 +26,8 @@ function App() {
 
 export default App
 
-const Wrapper = styled.div`
+const Wrapper = styled.main`
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
 `

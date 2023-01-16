@@ -38,8 +38,8 @@ const Wrapper = styled.aside`
     place-items: center;
     visibility: hidden;
     border: 1px solid black;
-    /* width: 90vw;
-    height: 95vh; */
+    width: 60vw;
+    height: 65vh;
     padding: 4rem 2rem;
     transform: scale(0);
   }

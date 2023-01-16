@@ -26,7 +26,7 @@ export default Sidebar
 const Wrapper = styled.aside`
   /* z-index: -1; */
   border: 1px solid blue;
-  height: 100px;
+  /* height: 100px; */
   .sidebar-wrapper {
     background: blue;
     position: fixed;
